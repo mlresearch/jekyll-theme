@@ -181,3 +181,13 @@
     pmlr-v{{ volume }}-{{ id }}
   {%-endcapture-%}
 {%endif%}
+
+{%-if pdf and site.link_visibility.pdf == false-%}{% assign pdf = false %}{%-endif-%}
+{%-if arxiv and site.link_visibility.arxiv == false-%}{% assign arxiv = false %}{%-endif-%}
+{%-if openreview and site.link_visibility.openreview == false-%}{% assign openreview = false %}{%-endif-%}
+{%-if software and site.link_visibility.software == false-%}{% assign software = false %}{%-endif-%}
+{%-if doi and site.link_visibility.doi == false-%}{% assign doi = false %}{%-endif-%}
+{%-if html and site.link_visibility.html == false-%}{% assign html = false %}{%-endif-%}
+{%-if website and site.link_visibility.website == false-%}{% assign website = false %}{%-endif-%}
+{%-if supplementary and site.link_visibility.supplementary == false-%}{% assign supplementary = false %}{%-endif-%}
+{%-if video and site.link_visibility.video == false-%}{% assign video = false %}{%-endif-%}
